@@ -1,0 +1,170 @@
+
+@font-face{
+    font-family: 'Young Serif';
+    src: url('/assets/fonts/young-serif/YoungSerif-Regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+body{
+    background-color:hsl(32, 74%, 93%);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 630px;
+    min-height: 1000px;
+    background-color: hsl(0, 100%, 99%);
+    border-radius: 15px;
+}
+.omelette-img img{
+    border-radius: 15px;
+    max-width: 100%;
+    width: 620px;
+    max-height: 300px;
+    margin: 5px;
+}
+.preparation-text{
+    width: auto;
+    background-color:hsla(318, 47%, 85%, 0.137);
+    border-radius: 15px;
+}
+.preparation-text, p {
+    font-size: 0.8em;
+    font-style: normal;
+    font-family: sans-serif;
+}
+h1{
+    font-family: 'Young Serif';
+}
+h4{
+    color:hsl(345, 73%, 41%);
+}
+h2{
+    font-family: 'Young Serif';
+    color: hsl(27, 72%, 24%);
+}
+.preparation-text, h4{
+    padding-left: 25px;   
+}
+.preparation-text, ul li{
+    line-height: 1.7;
+    top: 2px;
+    margin-left: 5px;
+    font-size: 0.9em;
+}
+.preparation-text li::marker{
+    color: hsl(345, 73%, 41%);
+}
+.ingredients{
+    position: relative;
+}
+
+.ingredients li::marker{
+    color: hsl(27, 72%, 24%);
+}
+.ingredients ul li{
+    margin-left: -22px;
+    line-height: 1.8;
+    font-size: 0.8em;
+    font-family: sans-serif;
+}
+.instruction ol li{
+    margin-left: -22px;
+    line-height: 1.5;
+    font-size: 0.8em;
+    font-family: sans-serif;
+}
+.instruction li::marker{
+    color: hsl(27, 72%, 24%);
+}
+ol > li{
+    font-weight: bold;
+}
+ol > li > span{
+    font-weight: normal;
+}
+
+.nutritions p{
+    font-size: 1rem;
+}
+td{
+    padding:10px;
+    font-size: 0.78em;
+    font-family: sans-serif;
+}
+.center-table{
+    margin-left: 20px;
+    border-collapse: collapse;
+}
+.first-row td{
+    border-bottom: 1px solid hsla(0, 12%, 56%, 0.397);
+}
+.second-row td{
+    border-bottom: 1px solid hsla(0, 12%, 56%, 0.397);
+}
+.third-row td{
+    border-bottom: 1px solid hsla(0, 12%, 56%, 0.397);
+}
+
+td > span{
+    color: hsl(27, 72%, 24%);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 650px){
+    body{
+        margin: 0;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h1{
+
+        font-size: 2.1rem;
+    }
+    .container{
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 5px;
+      margin: 0;
+      border-radius: 0;
+      object-fit:contain;
+    }
+    .omelette-img img{
+        width: 110%;
+        height: 110%;
+        margin: 0;
+        border-radius: 0;
+    }
+    .preparation-text{
+        max-width: 89vw;
+        margin-left: -10px;
+    }
+    .preparation-text, p{
+        font-size: 1.2em;
+    }
+    .preparation-text, ul li{
+        font-size: 1.2em;
+        margin-left: 10px;
+    }
+    .ingredients, ul li{
+        font-size: 1.2rem;
+        margin-left: 10px;
+    }
+    .instruction ol li{
+        font-size: 1.1em;
+        margin-left: 5px;
+    }
+    .nutritions ,p{
+        font-size: 1.2em;
+        padding: 10px;
+    }
+    td{
+        font-size: 1.2em;
+    }
+ }
